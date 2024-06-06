@@ -1,7 +1,7 @@
 // import ListGroup from "./components/ListGroup";
 // // import { Fragment } from "react/jsx-runtime";
 
-import Alert from "./components/Alert";
+// import Alert from "./components/Alert";
 
 // function App() {
 //   let items = ["New York", "San Fransisco", "Tokyo", "London", "Paris"];
@@ -22,15 +22,28 @@ import Alert from "./components/Alert";
 
 // export default App;
 
-function App() {
+// function App() {
+//   return (
+//     <div>
+//       {/* <Alert children="Hello World" /> */}
+//       <Alert>
+//         Hello <span>World</span>
+//       </Alert>
+//     </div>
+//   );
+// }
+
+// export default App;
+
+import React from "react";
+import Button from "./components/Button";
+
+const App = () => {
   return (
     <div>
-      {/* <Alert children="Hello World" /> */}
-      <Alert>
-        Hello <span>World</span>
-      </Alert>
+      <Button></Button>
     </div>
   );
-}
+};
 
 export default App;
