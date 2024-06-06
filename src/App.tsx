@@ -1,19 +1,34 @@
-import ListGroup from "./components/ListGroup";
-// import { Fragment } from "react/jsx-runtime";
+// import ListGroup from "./components/ListGroup";
+// // import { Fragment } from "react/jsx-runtime";
+
+import Alert from "./components/Alert";
+
+// function App() {
+//   let items = ["New York", "San Fransisco", "Tokyo", "London", "Paris"];
+
+//   const hadnleSelectItem = (item: string) => {
+//     console.log(item);
+//   };
+//   return (
+//     <div>
+//       <ListGroup
+//         items={items}
+//         heading={"Cities"}
+//         onSelectItem={hadnleSelectItem}
+//       />
+//     </div>
+//   );
+// }
+
+// export default App;
 
 function App() {
-  let items = ["New York", "San Fransisco", "Tokyo", "London", "Paris"];
-
-  const hadnleSelectItem = (item: string) => {
-    console.log(item);
-  };
   return (
     <div>
-      <ListGroup
-        items={items}
-        heading={"Cities"}
-        onSelectItem={hadnleSelectItem}
-      />
+      {/* <Alert children="Hello World" /> */}
+      <Alert>
+        Hello <span>World</span>
+      </Alert>
     </div>
   );
 }
