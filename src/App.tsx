@@ -1,14 +1,20 @@
 import ListGroup from "./components/ListGroup";
+// import { Fragment } from "react/jsx-runtime";
 
 function App() {
+  let items = ["New York", "San Fransisco", "Tokyo", "London", "Paris"];
+
+  const hadnleSelectItem = (item: string) => {
+    console.log(item);
+  };
   return (
-    <ul className="list-group">
-      <li className="list-group-item">An item</li>
-      <li className="list-group-item">A second item</li>
-      <li className="list-group-item">A third item</li>
-      <li className="list-group-item">A fourth item</li>
-      <li className="list-group-item">And a fifth one</li>
-    </ul>
+    <div>
+      <ListGroup
+        items={items}
+        heading={"Cities"}
+        onSelectItem={hadnleSelectItem}
+      />
+    </div>
   );
 }
 
