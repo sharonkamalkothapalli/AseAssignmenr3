@@ -1,7 +1,16 @@
 import React from "react";
 
-const Button = () => {
-  return <button className="btn btn-primary">Button</button>;
+interface Props {
+  children: String;
+  color?: "primary" | "secondary" | "danger";
+  onClick: () => void;
+}
+const Button = ({ children, onClick, color = "primary" }: Props) => {
+  return (
+    <button className={"btn btn-" + color} onClick={onClick}>
+      {children}
+    </button>
+  );
 };
 
 export default Button;

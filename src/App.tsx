@@ -41,7 +41,9 @@ import Button from "./components/Button";
 const App = () => {
   return (
     <div>
-      <Button></Button>
+      <Button color="secondary" onClick={() => console.log("Clicked")}>
+        My Button
+      </Button>
     </div>
   );
 };
